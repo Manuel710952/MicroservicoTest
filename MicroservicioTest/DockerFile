@@ -1,5 +1,5 @@
 ﻿# Utiliza una imagen base con soporte para .NET Core
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS build
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
