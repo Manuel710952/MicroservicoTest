@@ -18,7 +18,7 @@ RUN dotnet build --configuration Release --no-restore
 RUN dotnet publish --configuration Release --no-build --output /app/publish
 
 # Configura el contenedor para ejecutar la aplicación
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS final
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.1 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
 
